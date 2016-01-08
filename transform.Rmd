@@ -296,10 +296,10 @@ filter(df, is.na(x) | x > 1)
 
     * Departed in summer.
     * That flew to Houston (`IAH` or `HOU`).
-    * There were operated by United, American, or Delta.
+    * That were operated by United, American, or Delta.
     * That were delayed by more two hours.
     * That arrived more than two hours late, but didn't leave late.
-    * We delayed by at least an hour, but made up over 30 minutes in flight.
+    * Were delayed by at least an hour, but made up over 30 minutes in flight.
     * Departed between midnight and 6am.
 
 1.  How many flights have a missing `dep_time`? What other variables are 
@@ -537,7 +537,7 @@ ggplot(flights, aes(air_time - airtime2)) + geom_histogram()
     Convert them to a more convenient represention of number of minutes
     since midnight.
     
-1.  Compute the scheduled time by adding `dep_delay` to `dep_time`. Plot
+1.  Compute the scheduled time by subtracting `dep_delay` to `dep_time`. Plot
     the distribution of departure times. What do you think causes the 
     interesting pattern?
   
