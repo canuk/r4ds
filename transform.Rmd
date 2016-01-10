@@ -459,7 +459,7 @@ There are many functions for creating new variables. The key property is that th
     the proportion of a total and `y - mean(y)` computes the difference from 
     the mean, and so on.
     
-*   Modular arithmetic: `%/%` (integer divison) and `%%` (remainder), where
+*   Modular arithmetic: `%/%` (integer division) and `%%` (remainder), where
     `x == y * (x %/% y) + (x %% y)`. Modular arithmetic is a handy tool because 
     it allows you to break integers up into pieces. For example, in the 
     flights dataset, you can compute `hour` and `minute` from `dep_time` with:
@@ -563,7 +563,7 @@ by_day <- group_by(flights, year, month, day)
 summarise(by_day, delay = mean(dep_delay, na.rm = TRUE))
 ```
 
-Together `group_by()` and `summarise()` provide one of tools that you'll use most commonly when working with dplyr: groued summaries. But before we go any further with this idea, we need to introduce a powerful new idea: the pipe.
+Together `group_by()` and `summarise()` provide one of tools that you'll use most commonly when working with dplyr: grouped summaries. But before we go any further with this idea, we need to introduce a powerful new idea: the pipe.
 
 ### Combining multiple operations with the pipe
 
